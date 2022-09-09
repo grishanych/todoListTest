@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 function AddTodo({ todo, setTodo }) {
 
@@ -7,13 +8,14 @@ function AddTodo({ todo, setTodo }) {
     function saveTodo() {
         setTodo(
             [...todo, {
-                id: 4,
+                id: uuidv4(),
                 name: 'NewName',
                 description: value,
                 date: new Date().toLocaleString(),
                 status: true
             }]
         )
+        setValue('')
     }
 
     return (
