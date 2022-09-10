@@ -1,3 +1,69 @@
 .App {
-  text-align: center;
+  display: flex;
+
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: rgb(110, 214, 171);
+  font-size: 36px;
+  color: azure;
+}
+
+.input-row{
+  display: flex;
+  justify-content: center;
+}
+
+.input-row .btn {
+  margin-left: 12px;
+}
+
+.editable-row{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.btn {
+  margin: 6px 0 0 12px;
+
+}
+
+.btnsTodo{
+  /* border: 1px solid rgb(21, 21, 21); */
+  /* border: 2px solid red; */
+  /* width: 15%; */
+}
+
+.closeIcon{
+  color:rgb(156, 149, 149);
+  text-decoration: line-through;
+  
+}
+
+.enterName{
+  /* background-color: rgb(197, 138, 138); */
+  width: 20%;
+  /* border: 1px solid rgb(21, 21, 21); */
+}
+
+.showDate{
+/* background-color: aqua; */
+width: 15%;
+/* border: 1px solid rgb(21, 21, 21); */
+}
+
+.enterDescription{
+  /* background-color: blueviolet; */
+  width: 40%;
+  /* border: 1px solid rgb(21, 21, 21); */
 }
