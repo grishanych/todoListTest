@@ -24,7 +24,6 @@
 
 .editable-row{
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -45,8 +44,11 @@
 }
 
 .closeIcon{
+
   color:rgb(156, 149, 149);
   text-decoration: line-through;
+  width: 40%;
+  overflow-wrap: break-word;
   
 }
 
@@ -65,5 +67,7 @@ width: 15%;
 .enterDescription{
   /* background-color: blueviolet; */
   width: 40%;
+  overflow-wrap: break-word;
   /* border: 1px solid rgb(21, 21, 21); */
+  /* height: 200px; */
 }
