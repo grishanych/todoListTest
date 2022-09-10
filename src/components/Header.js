@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 function Header() {
     return (
-        <div>To-do list manager</div>
+        <h1 className='header'>To-do list manager</h1>
     )
 };
 
