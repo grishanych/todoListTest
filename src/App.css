@@ -1,73 +1,153 @@
-.App {
+.containerMain {
+  margin: 0 auto;
+  max-width: 1280px;
   display: flex;
-
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 60px;
   background-color: rgb(110, 214, 171);
-  font-size: 36px;
-  color: azure;
+  color: rgb(255, 255, 255);
 }
 
-.input-row{
+.input-row {
   display: flex;
   justify-content: center;
+  margin: 0 3px;
+
 }
 
 .input-row .btn {
   margin-left: 12px;
 }
 
-.editable-row{
+.titles {
+  font-weight: bold;
+  margin: 0 3px;
+}
+
+.editable-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 12px;
+  justify-content: flex-start;
+  flex-wrap: no-wrap;
+  margin: 12px 3px 0;
   width: 100%;
-  /* border: 2px solid red; */
+}
+
+.form-control {
+  margin-right: 12px;
+}
+
+.btnSave.btn.btn-success {
+  margin: 0 0;
 }
 
 .btn {
-  margin: 6px 0 0 12px;
-
+  margin: 6px 0 0 6px;
 }
 
-.btnsTodo{
-  /* border: 1px solid rgb(21, 21, 21); */
-  /* border: 2px solid red; */
-  /* width: 15%; */
-}
-
-.closeIcon{
-
-  color:rgb(156, 149, 149);
+.closeIcon {
+  color: rgb(156, 149, 149);
   text-decoration: line-through;
-  width: 40%;
+  width: 45%;
   overflow-wrap: break-word;
-  
+  margin-left: 24px;
 }
 
-.enterName{
-  /* background-color: rgb(197, 138, 138); */
+.enterName {
+ word-break: break-all;
+ width: 20%;
+ text-align: left;
+}
+
+.enterNameEdit {
+  border: none;
+  width: 100%;
+  border: 1px solid rgba(255, 238, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 4px 1px 8px 2px rgba(255, 238, 0, 0.835);
+  padding-left: 6px;
+  text-align: left;
+}
+
+.enterNameEdit:focus {
+  outline: none;
+}
+
+.showDate {
+  text-align: center;
+  width: 10%;
+  text-align: left;
+  margin-left: 24px;
+}
+
+.showDateTitle {
+  text-align: center;
+  width: 10%;
+  text-align: left;
+  margin-left: 24px;
+}
+
+.showDateAfter {
+  text-align: center;
+  width: 10%;
+  text-align: left;
+  margin-left: 24px;
+  font-style: italic;
+}
+
+.enterDescription {
+  width: 45%;
+  padding-right: 24px;
+  text-align: left;
+  margin-left: 24px;
+  word-break: break-all;
+}
+
+.enterDescriptionAfter {
+  width: 45%;
+  overflow-wrap: break-word;
+  margin-left: 24px;
+  padding-right: 24px;
+  text-align: left;
+}
+
+
+
+.btnsTodo {
   width: 20%;
-  /* border: 1px solid rgb(21, 21, 21); */
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  margin-right: 8px;
 }
 
-.showDate{
-/* background-color: aqua; */
-width: 15%;
-/* border: 1px solid rgb(21, 21, 21); */
+@media screen and (max-width: 640px) {
+
+  .showDate,
+  .showDateAfter {
+    font-size: 12px;
+  }
 }
 
-.enterDescription{
-  /* background-color: blueviolet; */
-  width: 40%;
-  overflow-wrap: break-word;
-  border: 1px solid rgb(21, 21, 21);
-  /* height: 200px; */
+@media screen and (max-width: 420px) {
+
+  .showDate,
+  .showDateAfter {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  .btnsTodo {
+    width: 15%;
+    flex-direction: column;
+}
 }
